@@ -34,12 +34,7 @@
                         <label class="form-radio form-inline" style="color:grey">
                         <input type="radio" v-model="info.priority" value="low" ><i class="form-icon" ></i> Low
                         </label>
-                    </fieldset>
-                    
-                    <!--fieldset>
-                        <legend>Attach</legend>
-                        <input @change="handleAttachment" class="form-input" id="attach" accepts="images/*" type="file">
-                    
+                    </fieldset>                    
                     </fieldset-->
                 </div>
                 <div class="divider-vert" data-content="    "></div>
@@ -49,7 +44,7 @@
                         <input class="form-input"  placeholder="Your Name" name="name" v-model="info.name" type="text" tabindex="1" required autofocus>
                     </fieldset>
                     <fieldset>
-                        <!--input placeholder="Your Email Address" type="email" tabindex="2" required-->
+                        
                         <input class="form-input" type="email" id="input-email" placeholder="Your Email Address" v-model="info.email" value="" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
                     </fieldset>
                     <fieldset>
@@ -156,9 +151,9 @@ export default {
             return re.test(email);
         },
         submitIssue:function(){
-           //let myForm = document.getElementById('issues-form');
+           
             this.errors = [];
-            //this.info.phone = null;
+           
             if(!this.info.title){
                this.errors.push("Issue Title Required")
             }
@@ -213,9 +208,6 @@ export default {
                 console.log(error);
                 this.isProcessing = false;
             })
-
-            //let formData = myForm.serializeArray();
-            //console.log(formData);
         }
     },
     created:function(){
