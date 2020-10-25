@@ -1,0 +1,27 @@
+{
+  "name": "issues-feedback",
+  "version": "1.0.0",
+  "description": "App to track user feebback and issus for datalink",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build"
+  },
+  "author": "Vikrant Krishna",
+  "license": "ISC",
+  "dependencies": {
+    "@esri/arcgis-rest-auth": "^2.13.2",
+    "@esri/arcgis-rest-request": "^2.13.2",
+    "axios": "^0.19.2",
+    "cross-fetch": "^3.0.5",
+    "isomorphic-form-data": "^2.0.0",
+    "spectre.css": "^0.5.8",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.11",
+    "@vue/cli-service": "^3.0.0-beta.11",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
