@@ -53,7 +53,7 @@
                     <fieldset style="margin-top:20px;height:130px;">
                         <p class="error" v-if="errors.length">
                             <ul>
-                            <li v-for="error in errors">{{ error }}</li>
+                               <li v-for="error in errors">{{ error }}</li>
                             </ul>
                         </p>
                         <label v-if="info.issueResponse" style="text-align:center" ><h5 style="color:#5e7f2b;">Thank You for Submitting Feedback !</h5><br> <p class="error"> Your Ticket Reference #{{ info.issueResponse.iid }} </p></label>
